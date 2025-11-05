@@ -1,5 +1,0 @@
-relationship c5251d74-415d-4fe8-9226-de70716df5ce
-	joinOnDateBehavior: datePartOnly
-	fromColumn: Weather.Date
-	toColumn: LocalDateTable_e41233db-0544-4777-b7e5-ae50dfaee3f2.Date
-
