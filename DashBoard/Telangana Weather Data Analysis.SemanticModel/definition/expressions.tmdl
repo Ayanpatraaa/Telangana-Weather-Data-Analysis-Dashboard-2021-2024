@@ -1,0 +1,42 @@
+expression Parameter1 = #"Sample File" meta [IsParameterQuery=true, BinaryIdentifier=#"Sample File", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: de0084ef-9029-4f35-98dc-ed843242a694
+	queryGroup: 'Transform File from TS Weather Data\Helper Queries'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Sample File' =
+		let
+		    Source = Folder.Files("C:\Users\Hope\Downloads\TS Weather Data"),
+		    Navigation1 = Source{0}[Content]
+		in
+		    Navigation1
+	lineageTag: a8155f91-14a4-4f55-af0d-7c090031e385
+	queryGroup: 'Transform File from TS Weather Data\Helper Queries'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transform Sample File' =
+		let
+		    Source = Csv.Document(Parameter1,[Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+		    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+		in
+		    #"Promoted Headers"
+	lineageTag: 3d9fbf6d-e12e-4503-b01b-ede648351e3e
+	queryGroup: 'Transform File from TS Weather Data'
+
+	annotation PBI_ResultType = Table
+
+expression 'Transform File' =
+		let
+		    Source = (Parameter1 as binary) => let
+		    Source = Csv.Document(Parameter1,[Delimiter=",", Columns=10, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+		    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+		in
+		    #"Promoted Headers"
+		in
+		    Source
+	lineageTag: e6fc543c-47d9-4e83-b2ca-94d0cc5fc7b9
+	queryGroup: 'Transform File from TS Weather Data\Helper Queries'
+
+	annotation PBI_ResultType = Function
+

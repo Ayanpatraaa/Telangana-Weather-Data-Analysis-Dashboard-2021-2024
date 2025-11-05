@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Telangana Weather Data Analysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b27d5386-439a-4164-a012-30063442b33d"
+  }
+}

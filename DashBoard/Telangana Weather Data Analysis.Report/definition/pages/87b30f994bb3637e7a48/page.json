@@ -1,0 +1,112 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "87b30f994bb3637e7a48",
+  "displayName": "Wind Speed Analysis - 2",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#084872'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "type": "Tooltip",
+  "visualInteractions": [
+    {
+      "source": "c4cbdab5ee776a41d58f",
+      "target": "02a9c6ac3c7a4a0b0c61",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c4cbdab5ee776a41d58f",
+      "target": "1796919a9228093d7969",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c4cbdab5ee776a41d58f",
+      "target": "621b96f8da4e8fab4c67",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c4cbdab5ee776a41d58f",
+      "target": "6b970b7d69183d8a5627",
+      "type": "DataFilter"
+    },
+    {
+      "source": "c4cbdab5ee776a41d58f",
+      "target": "63430a31146a2ca36978",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1796919a9228093d7969",
+      "target": "c4cbdab5ee776a41d58f",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1796919a9228093d7969",
+      "target": "02a9c6ac3c7a4a0b0c61",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1796919a9228093d7969",
+      "target": "621b96f8da4e8fab4c67",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1796919a9228093d7969",
+      "target": "6b970b7d69183d8a5627",
+      "type": "DataFilter"
+    },
+    {
+      "source": "1796919a9228093d7969",
+      "target": "63430a31146a2ca36978",
+      "type": "DataFilter"
+    },
+    {
+      "source": "621b96f8da4e8fab4c67",
+      "target": "1796919a9228093d7969",
+      "type": "DataFilter"
+    },
+    {
+      "source": "621b96f8da4e8fab4c67",
+      "target": "02a9c6ac3c7a4a0b0c61",
+      "type": "DataFilter"
+    },
+    {
+      "source": "621b96f8da4e8fab4c67",
+      "target": "c4cbdab5ee776a41d58f",
+      "type": "DataFilter"
+    },
+    {
+      "source": "621b96f8da4e8fab4c67",
+      "target": "6b970b7d69183d8a5627",
+      "type": "DataFilter"
+    },
+    {
+      "source": "621b96f8da4e8fab4c67",
+      "target": "63430a31146a2ca36978",
+      "type": "DataFilter"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "a4d3d58a6b1b3bcabc78",
+  "position": {
+    "x": 468.49123268311121,
+    "y": 644.84856452646625,
+    "z": 11000,
+    "height": 59.234523672577275,
+    "width": 297.51885753726316,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "View all key weather metrics together.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#ffd822"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "f0e1434abd212be4737a"
+}

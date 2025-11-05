@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "f8d99a34b61d1bad7de3",
+  "position": {
+    "x": 859.26120401658352,
+    "y": 643.50232535208954,
+    "z": 10000,
+    "height": 44.425892754432958,
+    "width": 341.9447502916961,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Monitor and compare wind speed patterns.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#ffd822"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "f0e1434abd212be4737a"
+}

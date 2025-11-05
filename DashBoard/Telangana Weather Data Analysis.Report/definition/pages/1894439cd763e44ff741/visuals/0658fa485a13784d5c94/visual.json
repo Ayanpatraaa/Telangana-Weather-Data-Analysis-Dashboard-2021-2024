@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "0658fa485a13784d5c94",
+  "position": {
+    "x": 93.815163211635522,
+    "y": 0,
+    "z": 0,
+    "height": 52.857142857142861,
+    "width": 1048.5714285714287
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "💻 Comprehensive Weather Insights",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Arial, sans-serif",
+                      "fontSize": "24pt",
+                      "color": "#0e3f52"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DDF4E7'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "3972120752cb69df8e12"
+}

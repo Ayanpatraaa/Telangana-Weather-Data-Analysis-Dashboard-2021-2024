@@ -1,0 +1,29 @@
+table 'Metric Selector'
+	lineageTag: 19acca25-914c-48cd-bbad-5cc722dd8c14
+
+	column Metric
+		lineageTag: 4aeb9659-2674-4545-aa17-3e802bd05807
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Metric]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Metric Selector' = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE(
+				    "Metric", STRING,
+				    {
+				        {"Rainfall"},
+				        {"Temperature"},
+				        {"Humidity"},
+				        {"Wind Speed"}
+				    }
+				)
+				
+				```
+
+	annotation PBI_Id = fd8fcb5e8a374525bceac66e8e8576d9
+
